@@ -34,7 +34,7 @@ func toPersistentVolumeClaims(srv latest.ServiceConfig, original []apiv1.Persist
 		}
 		v.Spec.Resources = apiv1.ResourceRequirements{
 			Requests: apiv1.ResourceList{
-				apiv1.ResourceStorage: resource.MustParse("100Mi"),
+				apiv1.ResourceStorage: resource.MustParse("10Gi"),
 			},
 		}
 		volumes = append(volumes, v)

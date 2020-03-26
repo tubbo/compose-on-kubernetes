@@ -80,7 +80,7 @@ func TestStatefulSet(t *testing.T) {
 						},
 						Resources: apiv1.ResourceRequirements{
 							Requests: apiv1.ResourceList{
-								apiv1.ResourceStorage: resource.MustParse("100Mi"),
+								apiv1.ResourceStorage: resource.MustParse("10Gi"),
 							},
 						},
 					},
@@ -191,7 +191,7 @@ func TestStatefulSetWithReplicas(t *testing.T) {
 					},
 					Resources: apiv1.ResourceRequirements{
 						Requests: apiv1.ResourceList{
-							apiv1.ResourceStorage: resource.MustParse("100Mi"),
+							apiv1.ResourceStorage: resource.MustParse("10Gi"),
 						},
 					},
 				},
